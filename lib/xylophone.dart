@@ -62,13 +62,15 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton(
-        style: ElevatedButton.styleFrom(backgroundColor: buttonColor),
-        onPressed: () {
-          playSound(i);
-        },
-        child: Container(
-          height: devH * 0.127,
-        ));
+    return Expanded(
+      child: TextButton(
+          style: ElevatedButton.styleFrom(backgroundColor: buttonColor),
+          onPressed: () {
+            playSound(i);
+          },
+          child: Container(
+            
+          )),
+    );
   }
 }
